@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Switch, Route } from "react-router-dom";
-import History from "/History/History";
-import Contact from "./Contact/Contact";
+import History from "../History/History";
+import Contact from "../Contact/Contact";
 
 export default class About extends Component {
   render() {
+    console.log('hit')
     return (
       <div>
         <div className="subnav">
@@ -20,15 +21,16 @@ export default class About extends Component {
           </Link>
         </div>
 
-        <div className="box" />
+       <div className="box" />
         <Switch>
           <Route path="/about/history" component={History} />
           <Route path="/about/contact" component={Contact} />
           <Route
+            exact
             path="/about"
             render={() => (
               <div>
-                <h1>About the University</h1>
+                <h1> About the University</h1>
                 <p>
                   kljgfkjlearhgkjlhakljghasdflughvanirnhglkjdfhgkljfsf
                   skfhrygfvklfhgkluadfhnvghasn;jvlhsaljkchskjacghlshfflgf

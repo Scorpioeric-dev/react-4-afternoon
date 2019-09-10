@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
-//why did I use braces on link?
+//why did I use braces on link?Destructuring it from react-router-dom to use
+//assigning my links to navigate through pages
 
 export default class Home extends Component {
   render() {
